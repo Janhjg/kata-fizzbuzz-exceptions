@@ -1,3 +1,0 @@
-﻿# kata-fizzbuzz-exceptions
-
-### LALALALALA
