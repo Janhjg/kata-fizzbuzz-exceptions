@@ -1,39 +1,50 @@
+from main import fizbuzz
+
 def test_divisible_3():
-    #testea la funcion divisible entre 3 funcione
-    pass
+    assert fizbuzz(3) == "Fizz"
+    assert fizbuzz(9) == "Fizz"
 
 def test_divisible_5():
-    #testea que la funcion divisible entre 5 funcione
-    pass
+    assert fizbuzz(5) == "Buzz"
+    assert fizbuzz(10) == "Buzz"
 
 def test_divisible_3and5():
-    # testea que la funcion sea divisible entre 3 y 5 funcione
-    pass
+    assert fizbuzz(15) == "FizzBuzz"
+    assert fizbuzz(30) == "FizzBuzz"
 
 def test_no_divisible():
-    #testea cuando el numero no es divisible
-    pass
+    assert fizbuzz(2) == "2"
+    assert fizbuzz(7) == "7"
 
 def test_0():
-    # testea 0 es divisible entre 3 y 5
-    pass
+    # 0 es divisible por cualquier número, debería devolver FizzBuzz
+    assert fizbuzz(0) == "FizzBuzz"
 
 def test_fizz():
-    # de respuesta fizz 
-    pass
+    assert fizbuzz(6) == "Fizz"
 
 def test_buzz():
-    # responda bien buzz
-    pass
+    assert fizbuzz(20) == "Buzz"
 
 def test_fizzbuzz():
-    # responda bien fizzbuzz
-    pass
+    assert fizbuzz(45) == "FizzBuzz"
 
 def test_respuestanumero():
-    # devuelva correctamente el numero
-    pass
+    assert fizbuzz(1) == "1"
+    assert fizbuzz(4) == "4"
+    
+def test_fizz_es_string():
+    resultado = fizbuzz(3)
+    assert isinstance(resultado, str)
 
-def test_letrainput_error():
-    # cuando escriban texto de error
-    pass
+def test_buzz_es_string():
+    resultado = fizbuzz(5)
+    assert isinstance(resultado, str)
+
+def test_fizzbuzz_es_string():
+    resultado = fizbuzz(15)
+    assert isinstance(resultado, str)
+
+def test_numero_es_string():
+    resultado = fizbuzz(2)
+    assert isinstance(resultado, str)
