@@ -8,7 +8,7 @@ def test_divisible_5():
     assert fizbuzz(5) == "Buzz"
     assert fizbuzz(10) == "Buzz"
 
-def test_divisible_3and5():
+def test_divisible_3y5():
     assert fizbuzz(15) == "FizzBuzz"
     assert fizbuzz(30) == "FizzBuzz"
 

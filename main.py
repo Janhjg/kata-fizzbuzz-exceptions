@@ -23,7 +23,7 @@ def fizbuzz(numero):
 
 if __name__ == "__main__":  
     while True:
-        entrada = input("Introduce un número: ").lower()
+        entrada = input("Introduce un número: ")
         try:
             num = int(entrada)
             resultado = fizbuzz(num)
